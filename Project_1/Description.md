@@ -15,6 +15,13 @@
 
 I also observed that when submitting the form, the browser appends input values to the URL because the default method is `GET`. This helped me understand how data is transmitted.
 
+## QA Perspective (What This Means for Automation)
+
+- Class-based selectors are unstable and can break tests if styling changes.
+- `data-testid` creates a stronger contract between developers and automation.
+- Inputs without a `name` attribute are not submitted with the form.
+- A `button` inside a form defaults to `type="submit"` if not specified.
+- Understanding default browser behavior is critical for debugging failing tests.
 
 ### Resources I Used For Study 
 https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms
