@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA_Learning_Login</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <div class="FormGroup">
+            <label for="email">Email</label> 
+            <input
+
+        type="email"
+        id="email"
+        name="email"
+        class="input-field"
+        data-testid="email-input"
+        autocomplete="email"
+        required>
+        </div>
+        <div class="FormGroup">
+            <label for="password">Password</label> 
+            <input
+
+        type="password"
+        id="password"
+        name="password"
+        class="input-field"
+        data-testid="password-input"
+        autocomplete="current-password"
+        required>
+        </div>
+         <button 
+    type="submit"
+    id="button"
+    class="btn"
+    data-testid="submit-button">
+    Login
+  </button>
+    </form>
+
+    
+</body>
